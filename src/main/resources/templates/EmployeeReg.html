@@ -1,0 +1,44 @@
+<body>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<h1 style="color:blue;text-align:center">Register Employee </h1>
+
+     <th:action="@{/Employee/register}" method="post">
+    <table border="0" bgcolor="cyan" align="center">
+        <tr>
+           <td>  Employee name :: </td>
+           <td>  <input type="text" name="empName"/> </td>
+        </tr>
+        <tr>
+           <td>  Employee Desg :: </td>
+           <td>  <input type="text" name="empDesg"/> </td>
+        </tr>
+         <tr>
+           <td>  Employee Address :: </td>
+           <td>  <input type="text" name="empAddr"/> </td>
+        </tr>
+        <tr>
+           <td>  Employee Address :: </td>
+           <td>  <input type="phone" name="empPhone"/> </td>
+        </tr>
+        <tr>
+           <td>  Employee Address :: </td>
+           <td>  <input type="email" name="email"/> </td>
+        </tr>
+        
+        <tr>
+           <td>  Employee Salary :: </td>
+           <td>  <input type="text" name="empSal"/> </td>
+        </tr>
+        <tr>
+           <td>  Employee Dept no :: </td>
+           <td>  <input type="text" name="empdeptNo"/> </td>
+        </tr>
+        <tr>
+           <td> <input type="submit" value="create"> </td>
+           <td> <input  type="reset" >  </td>
+        </tr>
+    </table>
+</form:form>
+<span text="${Message}"></span>
+</body>
